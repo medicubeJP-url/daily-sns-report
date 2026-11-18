@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>일본 SNS·X 모니터링 일일 보고 2026-10-23</title>
+<style>
+  :root { --bg:#f7f8fa; --card:#fff; --ink:#1f2328; --sub:#59636e; --line:#e5e7eb; --accent:#2563eb; --pos:#15803d; --neg:#b91c1c; --neu:#6b7280; --warn:#b45309; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.6 -apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:24px 16px 48px; }
+  header h1 { font-size:22px; margin:0 0 4px; }
+  header .meta { color:var(--sub); font-size:13px; }
+  .status { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0 0; }
+  .chip { display:inline-block; padding:2px 10px; border-radius:999px; font-size:12px; background:#eef2ff; color:#3730a3; border:1px solid #e0e7ff; }
+  .chip.ok { background:#ecfdf5; color:#065f46; border-color:#d1fae5; }
+  .chip.warn { background:#fffbeb; color:#92400e; border-color:#fde68a; }
+  .chip.bad { background:#fef2f2; color:#991b1b; border-color:#fecaca; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:16px 0; }
+  section h2 { font-size:17px; margin:0 0 12px; }
+  section h3 { font-size:14px; margin:16px 0 8px; color:var(--sub); }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 12px; }
+  .kpi { border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+  .kpi .v { font-size:22px; font-weight:700; }
+  .kpi .l { font-size:12px; color:var(--sub); }
+  ul { margin:6px 0; padding-left:20px; }
+  li { margin:3px 0; }
+  table { width:100%; border-collapse:collapse; font-size:13px; margin:6px 0; }
+  th, td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; font-weight:600; white-space:nowrap; }
+  td.num, th.num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .q { color:#374151; }
+  .q::before { content:"「"; } .q::after { content:"」"; }
+  .tag { display:inline-block; font-size:11px; padding:0 6px; border-radius:4px; background:#f3f4f6; color:#374151; margin-right:4px; }
+  .tag.yt { background:#fee2e2; color:#991b1b; } .tag.tt { background:#e0f2fe; color:#075985; } .tag.ig { background:#fce7f3; color:#9d174d; } .tag.x { background:#e5e7eb; color:#111827; }
+  .pos { color:var(--pos); } .neg { color:var(--neg); } .neu { color:var(--neu); }
+  a { color:var(--accent); text-decoration:none; word-break:break-all; } a:hover { text-decoration:underline; }
+  .note { color:var(--sub); font-size:12px; }
+  .warnbox { background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:8px 12px; color:#92400e; font-size:13px; }
+  footer { color:var(--sub); font-size:12px; text-align:center; margin-top:24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>일본 SNS·X 모니터링 일일 보고 (2026-10-23, 금)</h1>
+    <div class="meta">생성 11:55 KST · 모드 B</div>
+    <div class="status"><span class="chip ok">YouTube ok (33개 검색어×3회)</span> <span class="chip ok">TikTok 12/12</span> <span class="chip ok">Instagram 12/12</span> <span class="chip ok">X 경쟁사 T3 ok</span> <span class="chip ok">X 자사 T2 ok</span> <span class="chip ok">X 브랜드명 없는 언급·전일 재확인 ok</span></div>
+  </header>
+
+  <section id="summary"><h2>1. 핵심 요약</h2>
+    <div class="kpis">
+      <div class="kpi"><div class="v">4</div><div class="l">자사 X 1만+ (48h)</div></div>
+      <div class="kpi"><div class="v">0</div><div class="l">자사 X 1만+ 부정</div></div>
+      <div class="kpi"><div class="v">34</div><div class="l">자사 X PR 해시태그</div></div>
+      <div class="kpi"><div class="v">4</div><div class="l">자사 SNS 크리에이터 (YT 48h 1·TT 24h 3·IG 24h 0)</div></div>
+      <div class="kpi"><div class="v">13</div><div class="l">경쟁사 X 브랜드 글 1만+</div></div>
+      <div class="kpi"><div class="v">5</div><div class="l">경쟁사 X 100만+ (모두 주제 글)</div></div>
+    </div>
+    <ul><li>자사 메디큐브: X(48시간) 조회 1만 이상 크리에이터 글 4건(긍정 3·중립 1·부정 0), PR 해시태그 글 34건. 최대 도달은 「ウォニョン宅にメディキューブの美顔器」 인용 글(12.0만). SNS 크리에이터 글은 YouTube 48h 1건, TikTok 24h 3건, Instagram 24h 0건.</li><li>경쟁사 X: 조회 1만 이상 브랜드 글 13건(Celladix 10, Anua 3, Numbuzin·Manyo·SKIN1004 0). Celladix 레티놀 세안제·GG 포어세럼 리뷰가 계속 퍼지고 있고 최대 9.6만이에요.</li><li>SNS 7일: Numbuzin TikTok이 조회 상위 1·2위(32.3만, 19.4만)이고, Numbuzin TikTok 7일 크리에이터 글이 9건으로 자사와 함께 가장 많아요.</li><li>위험 이슈: 자사는 1만 이상 부정 글 없음. 경쟁사는 Anua 운영사(JT) 채용을 비꼰 글 1건(14.3만, 제품이 아닌 기업 평판). 주제 쿼리에서는 아젤라산 자극 경험 글 1건(21.6만, 부정).</li><li>SNS 캡션 과장 표현(claim_risk=ng)은 2건이에요(YouTube, 必ず·治療).</li></ul>
+  </section>
+
+  <section id="own"><h2>2. 자사 메디큐브</h2>
+    <h3>X (T2, 48시간: 2026-10-21 10:59 ~ 2026-10-23 10:59)</h3>
+    <p>조회 1만 이상 크리에이터 글 4건 · 100만 이상 0건 · PR 해시태그 글 34건 · 1만 이상 부정 0건. 신작 아젤라산 토너패드 추천과 미용기기(장원영 집) 언급이 중심이에요.</p>
+    <table><tr><th>게시(KST)</th><th>계정</th><th class="num">조회</th><th>감성</th><th>내용</th><th>원문</th><th>링크</th></tr>
+    <tr><td>10-22 13:55</td><td>@meari314</td><td class="num">120,205</td><td><span class="pos">긍정</span></td><td>장원영 집에 메디큐브 미용기기</td><td><span class="q">ウォニョン宅にメディキューブの美顔器あるの信頼できる https://t.co/</span></td><td><a href="https://x.com/meari314/status/2113132156419727693" target="_blank" rel="noopener">열기</a></td></tr><tr><td>10-22 20:03</td><td>@tomomi___525</td><td class="num">75,164</td><td><span class="pos">긍정</span></td><td>신작 아젤라산 토너패드 추천</td><td><span class="q">メイクして数時間で鼻テカテカになる人、コレ！！！メディキューブの新作アゼライン酸</span></td><td><a href="https://x.com/tomomi___525/status/2113224727099810172" target="_blank" rel="noopener">열기</a></td></tr><tr><td>10-22 14:55</td><td>@mayuujimuin</td><td class="num">54,536</td><td><span class="pos">긍정</span></td><td>메디큐브 미용기기+미용액 사용 권유</td><td><span class="q">メイク前とお風呂上がりにメディキューブの美顔器と美容液使ってみて。美肌にもなるし</span></td><td><a href="https://x.com/mayuujimuin/status/2113147254798446784" target="_blank" rel="noopener">열기</a></td></tr><tr><td>10-22 09:07</td><td>@Gekogekolove</td><td class="num">11,361</td><td><span class="neu">중립</span></td><td>인플루언서들의 메디큐브 기기+핑크 세럼 병용</td><td><span class="q">美肌のインフルエンサー達みんなメディキューブの美顔器とピンクの美容液併用してる、</span></td><td><a href="https://x.com/Gekogekolove/status/2113059612421456017" target="_blank" rel="noopener">열기</a></td></tr></table>
+    <p class="note">공식 계정 글 1건(@medicube_japan)은 제외했어요. 전일 재확인에서 1만 이상으로 올라온 자사 글은 없어요.</p>
+    <h3>SNS</h3>
+    <p>YouTube 48h 1건 · TikTok 24h 3건(7일 9건) · Instagram 24h 0건(7일 4건). 공식 계정: Instagram @medicube_officialjapan 1건(10/22, 11/1 신제품 예고 「メディキューブ初の○○が登場」).</p>
+    <table><tr><th>플랫폼</th><th>게시(KST)</th><th class="num">조회</th><th>원문</th><th>링크</th></tr>
+    <tr><td><span class="tag tt">TikTok</span></td><td>10-16 19:00</td><td class="num">61,600</td><td><span class="q">脂性肌でトナーパッド迷ってたら、保存しといて。 #PR #トナパ #メディキュー</span></td><td><a href="https://www.tiktok.com/@skincare_danshi/video/7697112938523462920" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>10-17 18:22</td><td class="num">21,600</td><td><span class="q">混合肌でニキビやテカリ・皮脂が気になる方には @medicube_japan の</span></td><td><a href="https://www.tiktok.com/@yu____d04/video/7697564648052100372" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>10-22 19:46</td><td class="num">9,496</td><td><span class="q">時間がない朝のgrwm☀️ 〜顔浮腫すぎだろ〜 メイクは、メイク前のスキンケアで</span></td><td><a href="https://www.tiktok.com/@x_tx44/video/7699441767732579591" target="_blank" rel="noopener">열기</a></td></tr>
+    </table>
+    <p class="note">24시간 안 글: TikTok 9,496회 <a href="https://www.tiktok.com/@x_tx44/video/7699441767732579591" target="_blank" rel="noopener">열기</a> · TikTok 8,407회 <a href="https://www.tiktok.com/@ryota_biyouhou/video/7699394421099547910" target="_blank" rel="noopener">열기</a> · YouTube(48h) 315회 <a href="https://www.youtube.com/shorts/XqTPSZvQ5dc" target="_blank" rel="noopener">열기</a> · TikTok 305회 <a href="https://www.tiktok.com/@yuuuukopy_/video/7699420004747431188" target="_blank" rel="noopener">열기</a></p>
+  </section>
+
+  <section id="comp-x"><h2>3. 경쟁사 X (T3, verify 전)</h2>
+    <table><tr><th>브랜드</th><th class="num">1만+ 글</th><th class="num">최대 도달</th><th class="num">PR 해시태그</th><th class="num">점유율(참여)</th></tr>
+    <tr><td>Anua</td><td class="num">3</td><td class="num">142,680</td><td class="num">0</td><td class="num">23%</td></tr><tr><td>Celladix</td><td class="num">10</td><td class="num">95,655</td><td class="num">0</td><td class="num">77%</td></tr><tr><td>Numbuzin</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0%</td></tr><tr><td>Manyo</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0%</td></tr><tr><td>SKIN1004</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0%</td></tr></table>
+    <p class="note">reach_1m_count(100만 이상) 5건은 모두 주제 쿼리 글이에요(브랜드 글 0건). 주제 글 1만+ 28건(주제 컷 10만).</p>
+    <h3>도달 상위 5 (브랜드·주제 전체)</h3>
+    <table><tr><th>구분</th><th>계정</th><th class="num">도달</th><th>감성</th><th>내용</th><th>링크</th></tr>
+    <tr><td>주제 毛穴</td><td>@Me6x_1</td><td class="num">2,554,491</td><td><span class="neu">중립</span></td><td>모공 제로 미녀 비교 밈 <span class="q">人生これで鬱すぎる ⬅️厚化粧ババア 毛穴ゼロ爆美女➡️ https://t.c</span></td><td><a href="https://x.com/Me6x_1/status/2113103061115699429" target="_blank" rel="noopener">열기</a></td></tr><tr><td>주제 毛穴</td><td>@kancos_onni</td><td class="num">1,868,613</td><td><span class="neu">중립</span></td><td>모공 제로 미녀 밈 인용 <span class="q">わかる人生マジでこれ。 ⬅️準備に2時間かけるババア 毛穴ゼロ爆美女➡️ htt</span></td><td><a href="https://x.com/kancos_onni/status/2113144081220325862" target="_blank" rel="noopener">열기</a></td></tr><tr><td>주제 角栓</td><td>@bLRUZXalH0AYO8l</td><td class="num">1,388,338</td><td><span class="neu">중립</span></td><td>각전 방치 경험담 <span class="q">これねぇ 学生の頃ニキビと共にできやすくて けど取っちゃダメだと思って 勝手に取</span></td><td><a href="https://x.com/bLRUZXalH0AYO8l/status/2112754471642227038" target="_blank" rel="noopener">열기</a></td></tr><tr><td>주제 美白</td><td>@Mayochan_025</td><td class="num">1,182,583</td><td><span class="neu">중립</span></td><td>연예인 미백 케어 메모 <span class="q">確かにきりまるちゃん昔より白くなってる！！！ 3日に一回の美白ケア、メモ📝 ht</span></td><td><a href="https://x.com/Mayochan_025/status/2112811574729888144" target="_blank" rel="noopener">열기</a></td></tr><tr><td>주제 ニキビ</td><td>@mushockforever</td><td class="num">1,095,486</td><td><span class="neu">중립</span></td><td>파우더 파운데이션 해설(화학 관점) <span class="q">化粧品ってゴリ化学なので、パウダーファンデ問題を裏側含め解説させてくださ〜い❣️</span></td><td><a href="https://x.com/mushockforever/status/2112818288715878864" target="_blank" rel="noopener">열기</a></td></tr></table>
+    <h3>브랜드 글 상위 5</h3>
+    <table><tr><th>브랜드</th><th>계정</th><th class="num">도달</th><th>감성</th><th>내용</th><th>링크</th></tr>
+    <tr><td>Anua</td><td>@minniii1003</td><td class="num">142,680</td><td><span class="neg">부정</span></td><td>Anua 운영사(JT) 채용 비판 <span class="q">株式会社JT(アヌアの会社)とかもこんな感じの20代のバカっぽい女社員ばっかり採</span></td><td><a href="https://x.com/minniii1003/status/2112902425136996420" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Celladix</td><td>@trtk_531</td><td class="num">95,655</td><td><span class="pos">긍정</span></td><td>셀라딕스 레티놀 세안제와 맞는 세럼 정리 <span class="q">今バズり散らかしてるCelladixのレチノール洗顔、 ぶっちゃけ、合わせる美容</span></td><td><a href="https://x.com/trtk_531/status/2112845207821812151" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Celladix</td><td>@0hzo9</td><td class="num">64,373</td><td><span class="neu">중립</span></td><td>셀라딕스 GG3.0 포어세럼 신랄 리뷰 <span class="q">これ使ったら指の毛穴無くなるって。(試したからツリーで辛口レビューします💢。) </span></td><td><a href="https://x.com/0hzo9/status/2112797901311410534" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Celladix</td><td>@sawaeri1207</td><td class="num">61,394</td><td><span class="pos">긍정</span></td><td>로프트 셀라딕스 세트 후기 <span class="q">ロフトでCelladixのセット見つけて使ってみたんだけど、こんな鼻ツルツルにな</span></td><td><a href="https://x.com/sawaeri1207/status/2112830209368174774" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Celladix</td><td>@biyo_kenkyu_</td><td class="num">60,382</td><td><span class="pos">긍정</span></td><td>셀라딕스 레티놀 워시필 리뷰 4.5점 <span class="q">最近Xでやたら騒がれてる「セラディックス」結局どこに効くのか分からない人の為に全</span></td><td><a href="https://x.com/biyo_kenkyu_/status/2112840247298130348" target="_blank" rel="noopener">열기</a></td></tr></table>
+    <h3>부정 글 (1만+)</h3>
+    <table><tr><th>구분</th><th>계정</th><th class="num">도달</th><th>원인</th><th>근거</th><th>링크</th></tr>
+    <tr><td>Anua</td><td>@minniii1003</td><td class="num">142,680</td><td>기업 평판(운영사 채용 비판)</td><td><span class="q">20代のバカっぽい女社員ばっかり採用してる</span></td><td><a href="https://x.com/minniii1003/status/2112902425136996420" target="_blank" rel="noopener">열기</a></td></tr><tr><td>주제 皮脂</td><td>@ni_na_033</td><td class="num">215,575</td><td>자극(아젤라산)</td><td><span class="q">ひりつくので毎日は塗れない</span></td><td><a href="https://x.com/ni_na_033/status/2112938838708686941" target="_blank" rel="noopener">열기</a></td></tr></table>
+    <h3>3-2. 브랜드명 없는 언급 (X, 1만+)</h3>
+    <p>없음. 공식 계정 멘션(1단계) 후보는 최대 2,529회, 제품명 사전(2단계)은 메디큐브 ブースタープロ 글 3건만 귀속(최대 4,037회), 사진 속 패키지(3단계)도 1만 이상 0건이에요.</p>
+    <h3>3-3. 전일 재확인 추가 (X)</h3>
+    <p>없음. 어제 큐 21건을 다시 확인했는데 1만 이상이 된 글은 없고, 삭제·비공개 1건이에요.</p>
+  </section>
+
+  <section id="sns"><h2>4. SNS 브랜드 현황 (크리에이터만)</h2>
+    <table><tr><th>브랜드</th><th class="num">YT 48h</th><th class="num">TT 24h</th><th class="num">IG 24h</th><th class="num">TT 7일</th><th class="num">IG 7일</th><th class="num">공식</th><th class="num">PR 24h</th></tr>
+    <tr><td>Anua</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>VT</td><td class="num">5</td><td class="num">1</td><td class="num">1</td><td class="num">2</td><td class="num">4</td><td class="num">1</td><td class="num">2</td></tr><tr><td>d'Alba</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td>Manyo</td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6</td><td class="num">0</td><td class="num">2</td></tr><tr><td>Numbuzin</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">9</td><td class="num">6</td><td class="num">4</td><td class="num">0</td></tr><tr><td>Celladix</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">0</td></tr><tr><td>Celimax</td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">4</td><td class="num">7</td><td class="num">0</td><td class="num">0</td></tr><tr><td>BIOHEAL BOH</td><td class="num">1</td><td class="num">1</td><td class="num">2</td><td class="num">7</td><td class="num">5</td><td class="num">3</td><td class="num">2</td></tr><tr><td>Torriden</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td class="num">2</td><td class="num">1</td><td class="num">0</td></tr><tr><td>Rejuran</td><td class="num">5</td><td class="num">0</td><td class="num">1</td><td class="num">3</td><td class="num">5</td><td class="num">0</td><td class="num">2</td></tr><tr><td>COSRX</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">2</td><td class="num">0</td></tr><tr><td>메디큐브(자사)</td><td class="num">1</td><td class="num">3</td><td class="num">0</td><td class="num">9</td><td class="num">4</td><td class="num">1</td><td class="num">3</td></tr></table>
+    <p class="note">YouTube는 48시간 기준이에요. 공식은 YouTube 48h + TikTok·Instagram 7일 공식 계정 글 수예요. 눈에 띄는 공식 공지: VT 「ポムポムプリン x VT」 콜라보(IG), Numbuzin 신작 5번 「白玉グルタチオンC」 예고(IG), BIOHEAL BOH × 白岩瑠姫(JO1) 비하인드 영상(YT·TT).</p>
+    <h3>7일 조회수 상위 10 (전 브랜드)</h3>
+    <table><tr><th>플랫폼</th><th>브랜드</th><th>게시(KST)</th><th class="num">조회</th><th>원문</th><th>링크</th></tr>
+    <tr><td><span class="tag tt">TikTok</span></td><td>Numbuzin</td><td>10-17 19:55</td><td class="num">323,400</td><td><span class="q">📣【老けて見られないための対策3選】 年齢より老けて見られたくない人、必見！👀 </span></td><td><a href="https://www.tiktok.com/@dr_y.kaga/video/7697564263849757972" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>Numbuzin</td><td>10-16 21:00</td><td class="num">193,700</td><td><span class="q">続々とレチナールスキンケアが増えてきてて嬉しいぜ #PR#ナンバーズイン#num</span></td><td><a href="https://www.tiktok.com/@ryota_biyouhou/video/7696819148331994369" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>Torriden</td><td>10-16 20:22</td><td class="num">89,900</td><td><span class="q">お姉ちゃんついにモデルデビュー！ #toriden #トリデン</span></td><td><a href="https://www.tiktok.com/@ane_dayo4/video/7697224536562961685" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>Numbuzin</td><td>10-17 19:39</td><td class="num">76,800</td><td><span class="q">【保存必須】刺激を抑えた美白ケア📖🖊 おすすめ↓ ◾︎ ナンバーズイン 5番 白</span></td><td><a href="https://www.tiktok.com/@nagare_skin/video/7697584557154929941" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>Anua</td><td>10-21 22:00</td><td class="num">75,876</td><td><span class="q">スキンケア〜ヘアケアまで全見せ！美容オタクの最強バスタイムルーティン2026🧖‍</span></td><td><a href="https://www.youtube.com/watch?v=Dwq3yq-bXM0" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>메디큐브(자사)</td><td>10-16 19:00</td><td class="num">61,600</td><td><span class="q">脂性肌でトナーパッド迷ってたら、保存しといて。 #PR #トナパ #メディキュー</span></td><td><a href="https://www.tiktok.com/@skincare_danshi/video/7697112938523462920" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>Numbuzin</td><td>10-19 20:00</td><td class="num">57,000</td><td><span class="q">「48歳だから仕方ない」って、諦めるのは早い。 綺麗な人たちに聞いた、綺麗のため</span></td><td><a href="https://www.tiktok.com/@natu__mtk/video/7698303744034786567" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>Celimax</td><td>10-17 19:01</td><td class="num">38,900</td><td><span class="q">未来ジワが出来やすい肌なので週3~4でコツコツﾚﾁｹｱ💪 お休みする日はアイクリ</span></td><td><a href="https://www.tiktok.com/@kayohada/video/7697574788465757441" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag tt">TikTok</span></td><td>Anua</td><td>10-19 17:33</td><td class="num">35,900</td><td><span class="q">正直レビュー！！ 使い切りましたので！！リピありか！なしか！！ 話しちゃいたいと</span></td><td><a href="https://www.tiktok.com/@mainichi_nikki55/video/7698294188588207381" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>Anua·d'Alba·BIOHEAL BOH</td><td>10-21 23:29</td><td class="num">25,838</td><td><span class="q">【雑誌付録】1週間まとめ最新・12月号2026年・当たり付録レビュー・ゼクシィ・</span></td><td><a href="https://www.youtube.com/watch?v=rGO1RYbVaYo" target="_blank" rel="noopener">열기</a></td></tr></table>
+    <p class="note">Instagram은 패널에 조회수가 없어 순위에서 빠져요. 전체 목록: sns\igtt-2026-10-23.json, sns\2026-10-23.json.</p>
+    <h3>claim_risk=ng</h3>
+    <table><tr><th>플랫폼</th><th>브랜드</th><th>걸린 표현</th><th>원문</th><th>링크</th></tr>
+    <tr><td><span class="tag yt">YouTube</span></td><td>VT</td><td>必ず</td><td><span class="q">［節約ミニマリスト］部屋を片付けると人生が変わる理由8つ︱聞くだけで部屋をスッキ</span></td><td><a href="https://www.youtube.com/watch?v=YFII6oEUuI0" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>Rejuran</td><td>治療</td><td><span class="q">ファンデでも隠せない毛穴…韓国美容のシルファーム×リジュランで肌質ケア</span></td><td><a href="https://www.youtube.com/shorts/rUxlIP5WL5s" target="_blank" rel="noopener">열기</a></td></tr></table>
+  </section>
+
+  <section id="coverage"><h2>5. 수집 상태와 공백</h2>
+    <ul>
+      <li>YouTube: 10:31 시작, 33개 검색어 × 3회(「이번 주」 필터, 일반 영상+Shorts) 모두 완료. 후보 689개 중 상대 시각으로 188개를 먼저 거르고 501개의 업로드 시각을 영상 데이터로 확인했어요. 48h 안 일본어 브랜드 영상 24건, non_japanese 제외 261건.</li>
+      <li>TikTok: 12/12 브랜드, 브랜드마다 204~214개 로드. Instagram: 12/12 브랜드, 212~216개 로드(Rejuran만 피드 끝 158개). Instagram 날짜 없는 게시물 24건(VT)은 게시물 ID로 시각을 계산했고, 24h·7일 경계 ±2시간 안에 든 글이 없어 상세 페이지는 열지 않았어요.</li>
+      <li>X: 경쟁사 T3 SearchTimeline 66회, 자사 T2 18회, 브랜드명 없는 언급 18회. 모두 정상 응답(404·429 없음). 전일 재확인 21건.</li>
+    </ul>
+    <div class="warnbox">
+      <ul>
+        <li>YouTube: 이 브라우저가 YouTube에 로그인돼 있어 로그인 없이 검색하라는 규칙은 오늘도 지키지 못했어요. 「BIOHEAL BO」는 3회 모두 결과 0건이었어요.</li>
+        <li>YouTube Rejuran 5건은 모두 리쥬란 시술(주사) 관련 영상이에요(병원·성형외과 홍보 4건, 시술 후기 1건). 화장품 브랜드 집계에서 뺄지는 학영님이 정해 주세요.</li>
+        <li>Instagram: 패널에 조회수가 없어 조회수는 null이에요. TikTok·Instagram 협찬 라벨(paid_partnership)은 확인하지 못했어요.</li>
+        <li>X 경쟁사: 주제 쿼리 6개(皮脂·ニキビ·毛穴·美白·美容液·パッド, 좋아요 20 이상 최신순)가 3페이지 상한에 걸려 48시간 전체를 보지 못했어요. パッド로 잡힌 테슬라 브레이크 패드 글(82.5만) 등 미용과 무관한 주제 글이 섞여 있어요. パッド 처리는 학영님 결정을 기다리고 있어요.</li>
+        <li>X 자사: 미테키 1월호 부록(메디큐브 모공 세럼) 관련 고조회 글(@cosmesnews 15.3만 등)은 자기 글 인용 규칙으로 제외됐어요.</li>
+      </ul>
+    </div>
+    <p class="note">충돌: 없음(conflicts 비어 있음). X 루틴은 B 모드로 11:18에 모두 끝냈어요. SingleONE은 수집·보고하지 않았어요.</p>
+  </section>
+
+  <footer>Aside 자동 생성 · 원문 인용은 번역하지 않음 · 공식 계정 글은 순위·건수에서 제외</footer>
+</div>
+</body>
+</html>

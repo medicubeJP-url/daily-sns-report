@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>일본 SNS·X 모니터링 일일 보고 2026-10-27</title>
+<style>
+  :root { --bg:#f7f8fa; --card:#fff; --ink:#1f2328; --sub:#59636e; --line:#e5e7eb; --accent:#2563eb; --pos:#15803d; --neg:#b91c1c; --neu:#6b7280; --warn:#b45309; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.6 -apple-system,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:24px 16px 48px; }
+  header h1 { font-size:22px; margin:0 0 4px; }
+  header .meta { color:var(--sub); font-size:13px; }
+  .status { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0 0; }
+  .chip { display:inline-block; padding:2px 10px; border-radius:999px; font-size:12px; background:#eef2ff; color:#3730a3; border:1px solid #e0e7ff; }
+  .chip.ok { background:#ecfdf5; color:#065f46; border-color:#d1fae5; }
+  .chip.warn { background:#fffbeb; color:#92400e; border-color:#fde68a; }
+  .chip.bad { background:#fef2f2; color:#991b1b; border-color:#fecaca; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:16px 0; }
+  section h2 { font-size:17px; margin:0 0 12px; }
+  section h3 { font-size:14px; margin:16px 0 8px; color:var(--sub); }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:4px 0 12px; }
+  .kpi { border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+  .kpi .v { font-size:22px; font-weight:700; }
+  .kpi .l { font-size:12px; color:var(--sub); }
+  ul { margin:6px 0; padding-left:20px; }
+  li { margin:3px 0; }
+  table { width:100%; border-collapse:collapse; font-size:13px; margin:6px 0; }
+  th, td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; font-weight:600; white-space:nowrap; }
+  td.num, th.num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .q { color:#374151; }
+  .q::before { content:"「"; } .q::after { content:"」"; }
+  .tag { display:inline-block; font-size:11px; padding:0 6px; border-radius:4px; background:#f3f4f6; color:#374151; margin-right:4px; }
+  .tag.yt { background:#fee2e2; color:#991b1b; } .tag.tt { background:#e0f2fe; color:#075985; } .tag.ig { background:#fce7f3; color:#9d174d; } .tag.x { background:#e5e7eb; color:#111827; }
+  .pos { color:var(--pos); } .neg { color:var(--neg); } .neu { color:var(--neu); }
+  a { color:var(--accent); text-decoration:none; word-break:break-all; } a:hover { text-decoration:underline; }
+  .note { color:var(--sub); font-size:12px; }
+  .warnbox { background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:8px 12px; color:#92400e; font-size:13px; }
+  footer { color:var(--sub); font-size:12px; text-align:center; margin-top:24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>일본 SNS·X 모니터링 일일 보고 (2026-10-27, 화)</h1>
+    <div class="meta">생성 20:42 KST · 모드 B</div>
+    <div class="status"><span class="chip ok">YouTube ok (12/12)</span><span class="chip bad">TikTok 미수집: 실행 지연</span><span class="chip bad">Instagram 미수집: 실행 지연</span><span class="chip warn">X 경쟁사 일부(Anua만)</span><span class="chip bad">X 자사 미수집</span><span class="chip bad">브랜드명 없는 언급·전일 재확인 미실행</span></div>
+    <div class="warnbox" style="margin-top:10px">오늘은 10:30 정기 실행이 16:07에야 시작됐고, 16:14~20:27 동안 실행이 멈췄습니다(PC 절전 추정). 그래서 YouTube만 전부 수집했고, X는 Anua만, TikTok·Instagram·자사 X는 수집하지 못했습니다.</div>
+  </header>
+
+  <section id="summary"><h2>1. 핵심 요약</h2>
+    <div class="kpis"><div class="kpi"><div class="v">미수집</div><div class="l">자사 X 1만+</div></div>
+<div class="kpi"><div class="v">1</div><div class="l">자사 YouTube 48h (크리에이터)</div></div>
+<div class="kpi"><div class="v">7</div><div class="l">경쟁사 X 1만+ 글 (Anua만)</div></div>
+<div class="kpi"><div class="v">2</div><div class="l">경쟁사 X 100만+</div></div>
+<div class="kpi"><div class="v">29</div><div class="l">YouTube 48h 브랜드 영상 (전체)</div></div>
+<div class="kpi"><div class="v">2</div><div class="l">claim_risk=ng (YouTube)</div></div></div>
+    <ul><li><b>자사 메디큐브:</b> X(T2)는 오늘 수집하지 못했습니다(실행 중단). YouTube 48시간 크리에이터 영상은 1건, PR 0건입니다 (<span class="q">最近のお気に入りスキンケア🫧メディキューブのパックを使ってみたよ♡#shorts</span>, 조회 1,102). TikTok·Instagram은 미수집입니다.</li>
+<li><b>경쟁사 X(Anua만 확인):</b> 기시·미유 부부 결혼식 답례품이 Anua였다는 글이 크게 퍼졌습니다. 원글 조회 10,491,796, 인용 글 4,214,420·477,585. 1만+ 글 7건 모두 긍정입니다.</li>
+<li><b>YouTube 48시간:</b> 경쟁사는 VT 9건, Anua 6건, d'Alba 4건 순으로 많습니다. 조회 1위는 美男子ヤノ의 스킨케어 정리 영상(18,911, Anua·VT·BIOHEAL BOH)입니다.</li>
+<li><b>위험 이슈:</b> 확인한 범위(Anua X, YouTube)에서 부정 글은 없습니다. YouTube 캡션 과장 표현(claim_risk=ng)은 2건입니다(Celimax: 絶対 / Rejuran: 治療·医師·皮膚科).</li></ul>
+  </section>
+
+  <section id="own"><h2>2. 자사 메디큐브</h2>
+    <h3>X (T2)</h3><div class="warnbox">미수집: 실행이 16:14~20:27 동안 멈춰 T2 하드스톱(밀린 기준 18:17)을 넘겨 검색하지 못했습니다(검색 0회). 다음 실행(48시간 기준)이 오늘 기간 대부분을 덮습니다.</div>
+    <h3>SNS</h3><ul><li><span class="tag yt">YouTube</span> 48시간 1건 · <span class="tag tt">TikTok</span> 미수집 · <span class="tag ig">Instagram</span> 미수집</li></ul>
+<table><tr><th>플랫폼</th><th>제목(원문)</th><th>채널</th><th>게시(KST)</th><th class="num">조회</th><th>PR</th><th>링크</th></tr><tr><td><span class="tag yt">YouTube</span></td><td><span class="q">最近のお気に入りスキンケア🫧メディキューブのパックを使ってみたよ♡#shorts</span></td><td>MxowMn</td><td>10-25 20:44</td><td class="num">1,102</td><td>-</td><td><a href="https://www.youtube.com/shorts/5iC31QBU34o" target="_blank" rel="noopener">열기</a></td></tr></table>
+<p class="note">7일 조회수 상위는 TikTok·Instagram 미수집으로 쓸 수 없어 YouTube 48시간 영상만 적었습니다.</p>
+  </section>
+
+  <section id="comp-x"><h2>3. 경쟁사 X (T3, verify 전)</h2>
+    <div class="warnbox">부분 수집: Anua 검색(アヌア 완료, anua 2페이지)만 했습니다. Celladix·Numbuzin·Manyo·SKIN1004와 주제 키워드 8개는 미수집이라 0이 아니라 공백입니다.</div>
+<table><tr><th>브랜드</th><th class="num">1만+ 글</th><th class="num">최대 도달</th><th class="num">PR</th><th>상태</th></tr><tr><td>Anua</td><td class="num">7</td><td class="num">10,491,796</td><td class="num">0</td><td>일부 수집</td></tr><tr><td>Celladix</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td>미수집</td></tr><tr><td>Numbuzin</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td>미수집</td></tr><tr><td>Manyo</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td>미수집</td></tr><tr><td>SKIN1004</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td>미수집</td></tr></table>
+<p>100만+ 글: 2건</p>
+<h3>도달 상위 5</h3>
+<table><tr><th>브랜드</th><th>원문</th><th>계정</th><th class="num">도달</th><th>감성</th><th>링크</th></tr><tr><td>Anua</td><td><span class="q">結婚式の引き出物がアヌアなぎしみゆ夫婦おもろすぎだろwww何食ったらこんなん思い</span></td><td>@Mayochan_025</td><td class="num">10,491,796</td><td><span class="pos">긍정</span></td><td><a href="https://x.com/Mayochan_025/status/2114597759940743534" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Anua</td><td><span class="q">ぎしみゆ夫婦の結婚式が理想すぎる‼️ ・席札が名前刺繍のハンカチ ・引き出物がア</span></td><td>@6r0vjk</td><td class="num">4,214,420</td><td><span class="pos">긍정</span></td><td><a href="https://x.com/6r0vjk/status/2114668302375305643" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Anua</td><td><span class="q">この3つを引き出物にしてるのわかり過ぎてる、、、。ガチで使える３つなのよこれは。</span></td><td>@popoen_</td><td class="num">477,585</td><td><span class="pos">긍정</span></td><td><a href="https://x.com/popoen_/status/2114610884937134504" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Anua</td><td><span class="q">結婚式の引き出物がアヌアなのセンス良すぎん？？🥹💗羨ましすぎて理想の引き出物作っ</span></td><td>@tomomi___525</td><td class="num">122,209</td><td><span class="pos">긍정</span></td><td><a href="https://x.com/tomomi___525/status/2114663144492818592" target="_blank" rel="noopener">열기</a></td></tr><tr><td>Anua</td><td><span class="q">⬅️アヌア縛りの理想の結婚式引き出物 好き全部詰めの理想の結婚式引き出物➡️ h</span></td><td>@popoen_</td><td class="num">56,613</td><td><span class="pos">긍정</span></td><td><a href="https://x.com/popoen_/status/2114621297896624449" target="_blank" rel="noopener">열기</a></td></tr></table>
+<h3>부정 글</h3><p>없음(Anua만 확인)</p>
+<h3>3-2. 브랜드명 없는 언급 (X, 1만+)</h3><div class="warnbox">미실행: 하드스톱(밀린 기준 18:47)이 지나 1~3단계를 돌리지 못했습니다.</div>
+<h3>3-3. 전일 재확인 추가 (X)</h3><div class="warnbox">미실행: 하드스톱이 지나 재확인하지 못했습니다. 10/23 재확인 대기열(431건)은 다음 실행으로 넘어갑니다.</div>
+  </section>
+
+  <section id="sns"><h2>4. SNS 브랜드 현황 (크리에이터만)</h2>
+    <table><tr><th>브랜드</th><th class="num">YT 48h</th><th class="num">TT 24h</th><th class="num">IG 24h</th><th class="num">TT 7일</th><th class="num">IG 7일</th><th class="num">공식</th><th class="num">PR(YT)</th></tr><tr><td>Anua</td><td class="num">6</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">1</td></tr><tr><td>VT</td><td class="num">9</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">3</td></tr><tr><td>d'Alba</td><td class="num">4</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>Manyo</td><td class="num">1</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>Numbuzin</td><td class="num">0</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>Celladix</td><td class="num">1</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>Celimax</td><td class="num">1</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>BIOHEAL BOH</td><td class="num">1</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>Torriden</td><td class="num">1</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>Rejuran</td><td class="num">4</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>COSRX</td><td class="num">2</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr><tr><td>메디큐브</td><td class="num">1</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">미수집</td><td class="num">0</td><td class="num">0</td></tr></table>
+<p class="note">YouTube는 48시간 기준입니다(오늘은 실행 정지로 약 52시간을 덮음). 한 영상에 여러 브랜드가 나오면 각 브랜드에 모두 셉니다.</p>
+<h3>조회수 상위 10 (YouTube 48시간, TikTok·Instagram 미수집)</h3>
+<table><tr><th>플랫폼</th><th>브랜드</th><th>제목(원문)</th><th>채널</th><th class="num">조회</th><th>PR</th><th>링크</th></tr><tr><td><span class="tag yt">YouTube</span></td><td>Anua, VT, BIOHEAL BOH</td><td><span class="q">【これだけ】肌質、肌悩み、時期を考えた、今見るべきスキンケア動画。</span></td><td>美男子ヤノ</td><td class="num">18,911</td><td>-</td><td><a href="https://www.youtube.com/watch?v=ZOhuPF9GItA" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>VT</td><td><span class="q">今話題のバブルマスク正直違い分からんの私だけ🤔⁉️ブランド別特徴を徹底解説✅#ス</span></td><td>葉月ひまり</td><td class="num">12,494</td><td>-</td><td><a href="https://www.youtube.com/shorts/QOGbf9Yd9rM" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>Anua</td><td><span class="q">このかっさクリームめちゃ良い🔥 #PR #Anua #アヌア #レチノール #ス</span></td><td>りょうまのモチベライフ</td><td class="num">7,473</td><td>PR</td><td><a href="https://www.youtube.com/shorts/39N1Zv0p6RQ" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>Celimax</td><td><span class="q">「レチナールで荒れた」ちょっと待ってください✋合わないと感じたらやめる前提で、最</span></td><td>華世【滑り台ツヤ肌美容】</td><td class="num">7,182</td><td>-</td><td><a href="https://www.youtube.com/shorts/1f5MrPoD_gc" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>VT</td><td><span class="q">【不潔に見られない方法1選🫧】</span></td><td>ぼっちの内科医</td><td class="num">3,458</td><td>PR</td><td><a href="https://www.youtube.com/shorts/9ICxoiC69Yk" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>COSRX</td><td><span class="q">【韓国スキンケア】大好きなクリームがパックになったので使ってみた🩵</span></td><td>はりん하린</td><td class="num">2,340</td><td>-</td><td><a href="https://www.youtube.com/shorts/i1h77Wj37x4" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>VT</td><td><span class="q">インフルエンサーの愛用ケアとは？</span></td><td>jjmakeup</td><td class="num">2,062</td><td>-</td><td><a href="https://www.youtube.com/shorts/pN6gs5t-m2Q" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>d'Alba</td><td><span class="q">混合肌の私が使ってるd'Albaの水色下地紹介🩵#美容 #美容オタク #下地 #</span></td><td>みん🫧美容</td><td class="num">1,249</td><td>-</td><td><a href="https://www.youtube.com/shorts/8Y7a7AHQem4" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>메디큐브</td><td><span class="q">最近のお気に入りスキンケア🫧メディキューブのパックを使ってみたよ♡#shorts</span></td><td>MxowMn</td><td class="num">1,102</td><td>-</td><td><a href="https://www.youtube.com/shorts/5iC31QBU34o" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>VT</td><td><span class="q">【スキンケア】肌悩みに合わせて選べるスキンケア紹介🌿 #PR #リドラーズ #リ</span></td><td>ゆちゃん@イエベ秋、乾燥肌</td><td class="num">1,101</td><td>PR</td><td><a href="https://www.youtube.com/shorts/l4O2HxszkRg" target="_blank" rel="noopener">열기</a></td></tr></table>
+<h3>claim_risk=ng</h3>
+<table><tr><th>플랫폼</th><th>브랜드</th><th>제목(원문)</th><th>걸린 표현</th><th class="num">조회</th><th>링크</th></tr><tr><td><span class="tag yt">YouTube</span></td><td>Celimax</td><td><span class="q">「レチナールで荒れた」ちょっと待ってください✋合わないと感じたらやめる前提で、最</span></td><td>絶対</td><td class="num">7,182</td><td><a href="https://www.youtube.com/shorts/1f5MrPoD_gc" target="_blank" rel="noopener">열기</a></td></tr><tr><td><span class="tag yt">YouTube</span></td><td>Rejuran</td><td><span class="q">美容皮膚科医が選ぶ 美肌治療ランキング #美容 #スキンケア#肌育 #美容医療 </span></td><td>治療, 医師, 皮膚科</td><td class="num">950</td><td><a href="https://www.youtube.com/shorts/CJc8rBDKV80" target="_blank" rel="noopener">열기</a></td></tr></table>
+<p class="note">전체 목록: data\ranking-detector\sns\2026-10-27.json</p>
+  </section>
+
+  <section id="coverage"><h2>5. 수집 상태와 공백</h2>
+    <ul>
+<li><b>실행 시각:</b> 10:30 정기 실행이 16:07에 늦게 시작됐고(두 루틴 동시), 16:14~20:27 동안 실행이 멈췄습니다(PC 절전 추정). 하드스톱은 실제 시작 기준으로 5시간 37분 밀어 적용했지만(YT 16:37, TT 17:42, IG 18:52, 보고서 시작 19:37), 멈춘 사이 모두 지나서 YouTube 뒤의 수집을 멈추고 보고서를 썼습니다.</li>
+<li><span class="tag yt">YouTube</span> ok. 검색어 33개 × 3회(+VT 1회 추가) 모두 완료. 후보 731개, 상대 시각으로 222개 제외, 영상 데이터로 업로드 시각 확인. 브랜드 영상 29건(공식 0건). 제외: 기간 밖 82, 브랜드명 없음 24, 문맥어 없음(VT 1·Rejuran 3), d'Alba 미용 문맥 없음 2, non_japanese 제외 368건.</li>
+<li><span class="tag yt">YouTube</span> 공백: 검색 일부는 정지 전(16:12~16:14), 나머지는 재개 후(20:27~20:38)에 돌아서, 기간을 10/25 16:12 ~ 수집 시각(약 52시간)으로 잡았습니다. 「BIOHEAL BO」는 모든 회차 0건, VT는 회차마다 결과가 크게 달랐습니다(1·1·11·0건). 이 브라우저가 YouTube에 로그인돼 있어 로그인 없이 검색하라는 규칙은 지키지 못했습니다. 좋아요는 대부분 비공개(null)입니다.</li>
+<li><span class="tag yt">YouTube</span> Rejuran 4건에는 시술(주사)·클리닉 영상이 섞여 있습니다. 화장품 집계에서 뺄지는 아직 결정 대기입니다.</li>
+<li><span class="tag tt">TikTok</span>·<span class="tag ig">Instagram</span> 미수집(실행 지연으로 하드스톱 경과). 12개 브랜드 모두 공백입니다.</li>
+<li><span class="tag x">X</span> 경쟁사(T3): Anua만 일부 수집(X 루틴 기록 기준 SearchTimeline 8회, 200 응답 6회, 404·429 0회). 자사(T2) 0회, 브랜드명 없는 언급·전일 재확인 미실행. X 수치는 verify 전입니다.</li>
+<li>모드 B 유지. 충돌 없음(두 루틴이 같은 시각에 시작했고, 멈춘 원인은 동시 실행이 아니라 실행 정지).</li>
+<li>SingleONE은 열지 않았습니다.</li>
+</ul>
+  </section>
+
+  <footer>Aside 자동 생성 · 원문 인용은 번역하지 않음 · 공식 계정 글은 순위·건수에서 제외</footer>
+</div>
+</body>
+</html>
