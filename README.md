@@ -1,9 +1,10 @@
 # 데일리 자사,경쟁사 SNS 리포트
 
-보고서 7건 · 마지막 갱신 2026-11-26 14:09 KST
+보고서 8건 · 마지막 갱신 2026-11-27 14:09 KST
 
 | 날짜 | 요일 | 파일 |
 | --- | --- | --- |
+| 2026-11-27 | 금 | [daily-2026-11-27.html](https://medicubejp-url.github.io/daily-sns-report/daily-2026-11-27.html) |
 | 2026-11-26 | 목 | [daily-2026-11-26.html](https://medicubejp-url.github.io/daily-sns-report/daily-2026-11-26.html) |
 | 2026-11-25 | 수 | [daily-2026-11-25.html](https://medicubejp-url.github.io/daily-sns-report/daily-2026-11-25.html) |
 | 2026-11-24 | 화 | [daily-2026-11-24.html](https://medicubejp-url.github.io/daily-sns-report/daily-2026-11-24.html) |
